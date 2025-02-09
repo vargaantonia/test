@@ -41,12 +41,11 @@ h2 {
   font-weight: 700;
   letter-spacing: 5px;
   background: linear-gradient(135deg, #e0b400, #9b1b30); 
-  -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 1.5rem;
 }
 
-/* Input mezők */
+
 input {
   width: 100%;
   padding: 18px 24px;
@@ -110,7 +109,6 @@ button:focus {
   box-shadow: 0 0 15px rgba(155, 27, 48, 0.6);
 }
 
-/* Reszponzív dizájn */
 @media (max-width: 480px) {
   .form-container {
     padding: 25px;
