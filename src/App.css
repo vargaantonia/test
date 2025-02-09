@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-container {
+  background: linear-gradient(135deg, #9b1b30, #e0b400);
+  border-radius: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.98);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  background: linear-gradient(135deg, #e0b400, #9b1b30); 
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+/* Input mezők */
+input {
+  width: 100%;
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+input:focus {
+  border: 2px solid #e0b400; 
+  box-shadow: 0 0 10px rgba(224, 180, 0, 0.6); 
+  background: #444;
+}
+
+.error {
+  color: #9b1b30;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  text-align: center;
+}
+
+
+button {
+  width: 100%;
+  padding: 18px;
+  background: #9b1b30;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+button:hover {
+  background: #e0b400;
+  box-shadow: 0 5px 25px rgba(224, 180, 0, 0.6);
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus {
+  outline: none;
+  background: #9b1b30;
+  box-shadow: 0 0 15px rgba(155, 27, 48, 0.6);
+}
+
+/* Reszponzív dizájn */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  input, button {
+    font-size: 1rem;
+  }
+}
